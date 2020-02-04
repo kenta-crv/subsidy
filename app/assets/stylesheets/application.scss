@@ -14,13 +14,12 @@
  *= require_self
  */
 
- $main_color: #004D7F;
+ $main_color: #0000FF;
  $sub_color: #1481c8;
 
 body {
   width:100%;
   margin:0 auto;
-  text-align:center;
 }
 
 
@@ -30,33 +29,28 @@ header {
   background-color:white;
   position: fixed;
   z-index:10;
+  list-style-type: none;
+  height: 40px;
   margin-top:-10px;
-     .left {
-       float:left;
-     }
-     .right {
-       float:right;
-     }
+  line-height:middle;
+  background: $main_color;
+  p {
+    line-height:middle;
+    padding:10px;
+    color: white;
+    font-weight:bold;
+  }
 }
 
 main {
-  margin-top:90px;
+  margin-top:-20px;
 }
 
 
 
                                   /*  メイン画像  */
 .back-image-app {
-  background-image: url('base.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  padding-bottom:50px;
-  margin-top:-22px;
-  margin-right:-15px;
-}
-.back-image-recruit {
-  background-image: url('base2.png');
+  background-image: url('subbase.png');
   background-size: 100%;
   background-repeat: no-repeat;
   vertical-align: middle;
@@ -65,6 +59,7 @@ main {
   margin-right:-15px;
 }
 .back-image {
+  text-align:center;
     .box2 {
      padding: 1vw 4.5vw 0.3vw;
      display:inline-block;
@@ -76,28 +71,36 @@ main {
              }
       }
       .face-1 {
-          font-size:2.0vw;
+          font-size:4.0vw;
           font-weight:bold;
           margin-top:30px;
+          color:#327BEE;
+          text-shadow: 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff, 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff;
       }
       .face-2 {
-          font-size:5.5vw;
+          font-size:3.6vw;
           font-weight:bold;
       }
       .face-3 {
-          font-size:5.5vw;
+          font-size:7.0vw;
           font-weight:bold;
-          color:red;
+          color:#327BEE;
+          text-shadow: 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff, 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff;
+      }
+      .face-4 {
+          font-size:2.0vw;
+          font-weight:bold;
+          text-shadow: 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff, 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff;
+          line-height:4.0vw;
       }
       .face-price {
           font-size:3.0vw;
           font-weight:bold;
-          color:red;
+          color:orange;
           margin:-10px 0 -25px;
-           strong{
-             font-size:8.5vw;
-             color:red;
-           }
+          padding-left:50px;
+          margin-top:20px;
+          margin-bottom:0px;
       }
       .face-conversion {
           font-size:3.0vw;
@@ -118,7 +121,7 @@ main {
            p {
            color: #FFF;/*文字色*/
            font-weight: bold;
-           font-size:2.0vw;
+           font-size:1.7vw;
              }
       }
 
@@ -131,17 +134,186 @@ main {
 /*イエローライン*/
 .push {
     text-align:center;
-    font-size:4.0vw;
+    font-size:6.0vw;
     color:orange;
     line-height:7.0vw;
     font-weight:bold;
     width:100%;
-    text-shadow: 2px 2px 2px #000;
-
+    text-shadow: 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff, 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff;
 }
 .under {
      background: linear-gradient(transparent 60%, #FFFF66 60%);
 }
+
+
+.surprise {
+  font-size:6.0vw;
+  color:white;
+  font-weight:bold;
+  background-color:blue;
+  padding:35px;
+}
+
+.balloon-right {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #fff;
+  border-radius: 15px;
+  border: medium solid blue;
+  padding:30px;
+  :before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -24px;
+  margin-top: -12px;
+  border: 12px solid transparent;
+  border-left: 12px solid blue;
+  z-index: 2;
+  }
+
+  h2{
+    color:blue;
+    font-weight:bold;
+  }
+}
+
+  .balloon {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 15px;
+    border: medium solid blue;
+    padding:30px;
+    :before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -24px;
+    margin-top: -12px;
+    border: 12px solid transparent;
+    border-right: 12px solid $main_color;
+    z-index: 2;
+    }
+    h2{
+      color:blue;
+      font-weight:bold;
+    }
+
+p {
+  margin: 0;
+  padding: 0;
+}
+}
+
+  .three_column {
+    color: #555;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 15px;
+    border: medium solid blue;
+    padding:30px;
+    margin-left
+
+p {
+  margin: 0;
+  padding: 0;
+}
+}
+
+.review {
+  font-weight:bold;
+  margin-top:10px;
+}
+.price {
+  color:red;
+}
+
+
+
+
+ul {
+    padding:30px;
+}
+li {
+    list-style-type: none;
+}
+dd {
+    margin-left: 0;
+}
+
+.flow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flow > li {
+    padding: 20px 30px;
+    margin-bottom: 8vh;
+    -ms-flex-preferred-size: 48%;
+    flex-basis: 48%;
+    border: 2px solid rgb(107,144,219);
+    position: relative;
+}
+.flow > li:nth-child(odd) {
+    margin-right: auto;
+}
+.flow > li:not(:last-child)::before,
+.flow > li:not(:last-child)::after {
+    content: "";
+    border: solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.flow > li:not(:last-child)::before {
+    border-width: 22px;
+    border-left-color: rgb(107,144,219);
+}
+.flow > li:not(:last-child)::after {
+    border-width: 20px;
+    border-left-color: #fff;
+}
+.flow > li .icon {
+    font-size: 12px;
+    color: #fff;
+    background: rgb(107,144,219);
+    background: -moz-linear-gradient(left, rgba(107,144,219,1) 0%, rgba(102,213,233,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(107,144,219,1) 0%,rgba(102,213,233,1) 100%);
+    background: linear-gradient(to right, rgba(107,144,219,1) 0%,rgba(102,213,233,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b90db', endColorstr='#66d5e9',GradientType=1 );
+    padding: 5px 20px;
+    display: block;
+    border-radius: 20px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: 100;
+}
+.flow > li dl dt {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(107,144,219);
+}
+
+
+
 
                                             /*テーブルに関する情報*/
 /*テーブル共通*/
@@ -161,8 +333,8 @@ table.company {
       overflow: visible;
       position: relative;
       color: #fff;
-      font-weight: normal;
-      font-size: 1.7vw;
+      font-weight: bold;
+      font-size: 2.0vw;
 
       :after {
          left: 100%;

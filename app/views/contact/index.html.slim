@@ -14,55 +14,120 @@
     br
     table.company
       colgroup
-        col width="40%"
-        col width="60%"
+        col width="10%"
+        col width="20%"
+        col width="70%"
       tr
-        th.arrow_box
+        td
+          strong.label 必須
+        td.arrow_box
           | 会社名
-          strong.label.label-blue 必須
-          small 株式会ABC
-        td= f.text_field :company
+        td
+          = f.text_field :company
+          br
       tr
-        th.arrow_box
+        td
+          strong.label 必須
+        td.arrow_box
           | 担当者名
-          strong.label.label-blue 必須
-          small 山田太郎
-        td= f.text_field :name
+        td
+          = f.text_field :name
+          br
       tr
-        th.arrow_box
+        td
+          strong.label 必須
+        td.arrow_box
           | 電話番号
-          strong.label.label-blue 必須
-          small 00-0000-0000
-        td= f.text_field :tel
+        td
+          = f.text_field :tel
       tr
-        th.arrow_box
+        td
+          strong.label 必須
+        td.arrow_box
           | メールアドレス
-          strong.label.label-blue 必須
-          small aaa@aaa.com
-        td= f.email_field :email
+        td
+          = f.email_field :email
       tr
-        th.arrow_box
+        td
+          strong.label 必須
+        td.arrow_box
           | 住所
-          strong.label.label-blue 必須
-          small 東京都東京市東京町1-1-1
-        td= f.text_field :address
+        td
+          = f.text_field :address
       tr
-        th.arrow_box
+        td
+          strong.label 必須
+        td.arrow_box
           | 連絡方法
-          strong.label.label-blue 必須
         td= f.select(:subject, [ \
             ["選択する","選択する"],      \
             ["どちらでも可","どちらでも可"],      \
             ["電話希望","電話希望"],      \
             ["メール希望","メール希望"],      \
-
             ])
       tr
-        th.arrow_box
-          | 本文
-          strong.label.label-blue 必須
-          small ※どんな助成金を申請したいか・申請人数等、決まっている情報を詳細に記載して頂くとやりとりの手間が省けます。
-        td= f.text_area :message
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 雇用保険有無
+        td.center
+         .row
+          .col-sm-4
+           = f.radio_button(:employment, "加入済")
+           = f.label "加入済"
+          .col-sm-4
+           = f.radio_button(:employment, "未加入")
+           = f.label "未加入"
+          .col-sm-4
+           = f.radio_button(:employment, "加入予定")
+           = f.label "加入予定"
       tr
-        td colspan="2"
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 雇用保険加入者数
+        td
+          = f.number_field :emp_number
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 社会保険有無
+        td.center
+         .row
+          .col-sm-4
+           = f.radio_button(:social, "加入済")
+           = f.label "加入済"
+          .col-sm-4
+           = f.radio_button(:social, "未加入")
+           = f.label "未加入"
+          .col-sm-4
+           = f.radio_button(:social, "加入予定")
+           = f.label "加入予定"
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 申請希望助成金
+        td.center
+         .row
+          .col-sm-12
+            = f.collection_check_boxes :subsidy, Contact.SubsidyLists, :first, :first
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | その他希望する助成金・補助金
+        td
+          = f.text_field :subsidy_other
+
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 追記事項
+        td
+          = f.text_area :message
+      tr
+        td colspan="3"
           = f.submit "確認"

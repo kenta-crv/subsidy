@@ -12,6 +12,7 @@ class ContactController < ApplicationController
     else
       render :action => 'index'
     end
+    binding.pry
   end
 
   def thanks
@@ -28,6 +29,11 @@ class ContactController < ApplicationController
     :address, #住所
     :email, #メールアドレス
     :subject,
+    :employment,
+    :emp_number,
+    :social,
+    :subsidy,
+    :subsidy_other,
     :message
     )
   end

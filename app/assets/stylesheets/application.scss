@@ -36,7 +36,8 @@ header {
   background: $main_color;
   p {
     line-height:middle;
-    padding:10px;
+    padding-top:10px;
+    font-size:1.2rem;
     color: white;
     font-weight:bold;
   }
@@ -56,7 +57,6 @@ main {
   vertical-align: middle;
   padding-bottom:50px;
   margin-top:-22px;
-  margin-right:-15px;
 }
 .back-image {
   text-align:center;
@@ -75,7 +75,7 @@ main {
           font-weight:bold;
           margin-top:30px;
           color:#327BEE;
-          text-shadow: 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff, 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff;
+          text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
       }
       .face-2 {
           font-size:3.6vw;
@@ -85,7 +85,7 @@ main {
           font-size:7.0vw;
           font-weight:bold;
           color:#327BEE;
-          text-shadow: 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff, 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff;
+          text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
       }
       .face-4 {
           font-size:2.0vw;
@@ -98,7 +98,6 @@ main {
           font-weight:bold;
           color:orange;
           margin:-10px 0 -25px;
-          padding-left:50px;
           margin-top:20px;
           margin-bottom:0px;
       }
@@ -136,7 +135,7 @@ main {
     text-align:center;
     font-size:6.0vw;
     color:orange;
-    line-height:7.0vw;
+    line-height:5.0vw;
     font-weight:bold;
     width:100%;
     text-shadow: 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff, 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff;
@@ -155,57 +154,34 @@ main {
 }
 
 .balloon-right {
-  position: relative;
-  display: inline-block;
-  margin: 1.5em 0;
+  margin: 0 auto;
   padding: 7px 10px;
-  min-width: 120px;
-  max-width: 100%;
+  width: 90%;
   color: #555;
-  font-size: 16px;
+  font-size: 1.5rem;
   background: #fff;
   border-radius: 15px;
   border: medium solid blue;
   padding:30px;
-  :before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -24px;
-  margin-top: -12px;
-  border: 12px solid transparent;
-  border-left: 12px solid blue;
-  z-index: 2;
   }
 
   h2{
     color:blue;
     font-weight:bold;
   }
-}
+
 
   .balloon {
-    position: relative;
-    display: inline-block;
-    margin: 1.5em 0;
+    margin: 0 auto;
     padding: 7px 10px;
-    min-width: 120px;
-    max-width: 100%;
+    max-width: 90%;
     color: #555;
-    font-size: 16px;
+    font-size: 1.5rem;
     background: #fff;
     border-radius: 15px;
     border: medium solid blue;
     padding:30px;
-    :before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -24px;
-    margin-top: -12px;
-    border: 12px solid transparent;
-    border-right: 12px solid $main_color;
-    z-index: 2;
+
     }
     h2{
       color:blue;
@@ -216,7 +192,7 @@ p {
   margin: 0;
   padding: 0;
 }
-}
+
 
   .three_column {
     color: #555;
@@ -378,10 +354,16 @@ table.company {
 }
   input {
     width:90%;
+    border-radius:3px;
+    box-shadow: none;
+    padding: 2px 8px;
   }
   textarea {
     width:90%;
     line-height: 1.5em;
+    border-radius:3px;
+    box-shadow: none;
+    padding: 2px 8px;
   }
 
 
@@ -674,4 +656,13 @@ background-color:$sub_color;
 .font-height-2 {
   font-size:0.5vw;
   margin:0 30px;
+}
+
+
+.label {
+  background: red;
+}
+
+.label-blue {
+  background: blue;
 }

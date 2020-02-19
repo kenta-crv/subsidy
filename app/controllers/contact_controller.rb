@@ -7,17 +7,19 @@ class ContactController < ApplicationController
 
   def confirm
     @contact = Contact.new(contact_params)
+    @contact.subsidy = params[:contact][:subsidy]
     if @contact.valid?
       render :action =>  'confirm'
     else
       render :action => 'index'
     end
-    binding.pry
+    # binding.pry
   end
 
   def thanks
     @contact = Contact.new(contact_params)
-    ContactMailer.received_email(@contact).deliver
+    @contact.subsidy = params[:contact][:subsidy]
+    ContactMailer.received_email(@contact, @contact.subsidy).deliver
   end
 
   private

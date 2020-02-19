@@ -91,7 +91,7 @@ br
           | 申請希望助成金
         td
           = f.hidden_field :subsidy
-          = @contact.subsidy
+          = @contact.subsidy.inspect
       tr
         td
           strong.label.label-blue 任意

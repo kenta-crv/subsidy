@@ -3,28 +3,9 @@ html
   head
       = render template: 'layouts/_head.html.slim'
   header
-    .row
-      .col-xs-3
-          =image_tag "logo1.png", height: "85vw", class:"left"
-      .col-xs-6
-      .col-xs-3
-          =image_tag "tel.gif", height: "85vw", class:"right"
-
-    .row.header
-      .col-xs-12
-        ul#dropmenu
-         li
-           = link_to  'トップ', '#' , class: "col-md"
-         li
-           = link_to  'RiPlusとは？', '#' , :class=>"col-md"
-         li
-           = link_to  'アポ代行', '#' , :class=>"col-md"
-         li
-           = link_to  '記事一覧', '#' , :class=>"col-md"
-         li
-           = link_to  '会社概要', '#' , :class=>"col-md"
-         li
-          = link_to  '問い合わせ', '#' , :class=>"col-md"
+      .row.header
+        .col-xs-12
+            p.center  申請のプロが集結！助成金申請・補助金申請を一括比較見積もり！
   body
     p.notice
       = notice

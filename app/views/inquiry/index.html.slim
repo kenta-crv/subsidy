@@ -1,0 +1,133 @@
+= form_for(@inquiry, url: { action: :confirm }) do |f|
+  - if @inquiry.errors.any?
+    strong 入力内容にエラーがあります
+    ul
+      - @inquiry.errors.each do |attr, msg|
+        li= msg
+
+  =image_tag 'contact.gif', width: '100%'
+
+  .tops-wrapper
+    h1.headline-first
+      span> お問い合わせ
+      | フォーム
+    br
+    table.company
+      colgroup
+        col width="10%"
+        col width="20%"
+        col width="70%"
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 会社名
+        td
+          = f.text_field :company
+          br
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 担当者名
+        td
+          = f.text_field :name
+          br
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 電話番号
+        td
+          = f.text_field :tel
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | メールアドレス
+        td
+          = f.email_field :email
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 住所
+        td
+          = f.text_field :address
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 連絡方法
+        td= f.select(:subject, [ \
+            ["選択する","選択する"],      \
+            ["どちらでも可","どちらでも可"],      \
+            ["電話希望","電話希望"],      \
+            ["メール希望","メール希望"],      \
+            ])
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 雇用保険有無
+        td.center
+         .row
+          .col-sm-4
+           = f.radio_button(:employment, "加入済")
+           = f.label "加入済"
+          .col-sm-4
+           = f.radio_button(:employment, "未加入")
+           = f.label "未加入"
+          .col-sm-4
+           = f.radio_button(:employment, "加入予定")
+           = f.label "加入予定"
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 雇用保険加入者数
+        td
+          = f.number_field :emp_number
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 社会保険有無
+        td.center
+         .row
+          .col-sm-4
+           = f.radio_button(:social, "加入済")
+           = f.label "加入済"
+          .col-sm-4
+           = f.radio_button(:social, "未加入")
+           = f.label "未加入"
+          .col-sm-4
+           = f.radio_button(:social, "加入予定")
+           = f.label "加入予定"
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 申請希望助成金
+        td.center
+         .row
+          .col-sm-12
+            = f.collection_check_boxes :subsidy, Inquiry.SubsidyLists, :first, :first
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | その他希望する助成金・補助金
+        td
+          = f.text_field :subsidy_other
+
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 追記事項
+        td
+          = f.text_area :message
+      tr
+        td colspan="3"
+          = f.submit "確認"

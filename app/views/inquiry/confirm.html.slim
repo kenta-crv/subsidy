@@ -1,0 +1,113 @@
+br
+  =image_tag 'contact.gif', width: '100%'
+
+
+= form_for(@inquiry, url: { action: :thanks }) do |f|
+  .tops-wrapper
+    h2.heading
+      span> お問い合わせ内容確認
+      | フォーム
+    table.company
+      colgroup
+        col width="10%"
+        col width="20%"
+        col width="70%"
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 会社名
+        td
+          = f.hidden_field :company
+          = @inquiry.company
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 担当者名
+        td
+          = f.hidden_field :name
+          = @inquiry.name
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 電話番号
+        td
+          = f.hidden_field :tel
+          = @inquiry.tel
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | メールアドレス
+        td
+          = f.hidden_field :email
+          = @inquiry.email
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 住所
+        td
+          = f.hidden_field :address
+          = @inquiry.address
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 連絡方法
+        td
+          = f.hidden_field :subject
+          = @inquiry.subject
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 雇用保険有無
+        td
+          = f.hidden_field :employment
+          = @inquiry.employment
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 雇用保険加入者数
+        td
+          = f.hidden_field :emp_number
+          = @inquiry.emp_number
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 社会保険有無
+        td
+          = f.hidden_field :social
+          = @inquiry.social
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 申請希望助成金
+        td
+          = f.hidden_field :subsidy
+          = @inquiry.subsidy.inspect
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | その他希望する助成金・補助金
+        td
+          = f.hidden_field :subsidy_other
+          = @inquiry.subsidy_other
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 追記事項
+        td
+          = f.hidden_field :message
+          = @inquiry.message
+      tr
+        td colspan="3"
+          = f.submit "確認"

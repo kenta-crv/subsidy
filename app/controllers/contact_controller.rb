@@ -19,6 +19,7 @@ class ContactController < ApplicationController
     @contact = Contact.new(contact_params)
     @contact.subsidy = params[:contact][:subsidy]
     ContactMailer.received_email(@contact, @contact.subsidy).deliver
+    ContactMailer.send_email(@contact, @contact.subsidy).deliver
   end
 
   private

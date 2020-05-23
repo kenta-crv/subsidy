@@ -8,8 +8,8 @@ Rails.application.configure do
   address: 'smtp3.gmoserver.jp',
   domain: 'ri-plus.jp',
   port: 587,
-  user_name: 'info@ri-plus.jp',
-  password: 'z#6FrWYnp',
+  user_name: 'subsidy@ri-plus.jp',
+  password: '$gAl2r9D',
   authentication: 'plain',
   enable_starttls_auto: true
   }

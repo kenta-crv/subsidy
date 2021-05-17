@@ -4,6 +4,5 @@ class Contact < ApplicationRecord
   validates :tel, {presence: true}
   validates :email, {presence: true}
   validates :address, {presence: true}
-  validates :subject, {presence: true}
   validates :message, {presence: true}
 end

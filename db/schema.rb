@@ -30,7 +30,11 @@ ActiveRecord::Schema.define(version: 2020_11_12_011628) do
     t.string "tel"
     t.string "email"
     t.string "address"
-    t.string "subject"
+    t.string "call"
+    t.string "voice"
+    t.string "history"
+    t.string "hirevel"
+    t.string "list"
     t.string "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

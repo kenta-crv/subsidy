@@ -28,7 +28,11 @@ class ContactController < ApplicationController
     :tel, #電話番号
     :address, #住所
     :email, #メールアドレス
-    :subject,
+    :call, #依頼件数
+    :voice, #アポ獲得分録音提供
+    :history, #アポ架電履歴まとめ
+    :hirevel, #ハイレベルアポインター
+    :list, #リスト用意の有無
     :message
     )
   end

@@ -1,9 +1,9 @@
 module ApplicationHelper
   def default_meta_tags
     {
-      site: "テレアポ代行『アポ匠』株式会社Ri-Plus",
+      site: "テレアポ課金型で継続率No.1!!結果の出るテレアポ代行なら『アポスク』",
       title:"<%= yield(:title) | 株式会社Ri-Plus' %>",
-      description: "ITを活用した分析型アポ代行・テレマーケティング代行なら『アポ匠』！ITプログラミング技術と徹底したマーケティングスキルでテレアポ成功事例を多数保有しております。",
+      description: "テレアポ課金型で継続率No.1の実績！課金型なのに高品質リストに架電するためアポ率が高く、非常にご好評頂いております。",
       keywords: "アポ代行,テレアポ 代行",
       canonical: request.original_url,  # 優先されるurl
       charset: "UTF-8",

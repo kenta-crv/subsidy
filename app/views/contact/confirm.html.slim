@@ -64,41 +64,9 @@ br
           = @contact.call
       tr
         td
-          strong.label.label-blue 任意
-        td.arrow_box
-          | アポ獲得分録音提供
-        td
-          = f.hidden_field :voice
-          = @contact.voice
-      tr
-        td
-          strong.label.label-blue 任意
-        td.arrow_box
-          | アポ架電履歴まとめ
-        td
-          = f.hidden_field :history
-          = @contact.history
-      tr
-        td
-          strong.label.label-blue 任意
-        td.arrow_box
-          | ハイレベルアポインター委託
-        td
-          = f.hidden_field :hirevel
-          = @contact.hirevel
-      tr
-        td
           strong.label 必須
         td.arrow_box
-          | リスト用意の有無
-        td
-         = f.hidden_field :list
-         = @contact.list
-      tr
-        td
-          strong.label 必須
-        td.arrow_box
-          | その他
+          | 問い合わせ内容
         td
           = f.hidden_field :message
           = @contact.message

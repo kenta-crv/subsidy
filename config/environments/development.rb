@@ -15,7 +15,7 @@ Rails.application.configure do
   domain: 'mail@app-sc.jp',
   port: 587,
   user_name: 'mail@app-sc.jp',
-  password: '4NBL#GiE',
+  password: 'Xm8DuUL#Q',
   authentication: 'plain',
   enable_starttls_auto: true
   }

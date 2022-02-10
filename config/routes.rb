@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'question' => 'top#question' #ナレッジリスト
 
   resources :posts
+  resources :columns
 
   get '/estimates' => 'estimates#index'
   post 'estimates/confirm' => 'estimates#confirm'

@@ -9,7 +9,7 @@
 
   .tops-wrapper
     h1.headline-first
-      span> お見積もり
+      span> 助成金見積もり
       | フォーム
     br
     table.company
@@ -49,32 +49,38 @@
         td = f.text_field :address
       tr
         td
-          strong.label 必須
+          strong.label.label-blue 任意
         td.arrow_box
           | URL
         td = f.text_field :url
       tr
         td
-          strong.label 必須
+          strong.label.label-blue 任意
         td.arrow_box
-          | アポ取りを行う商材
-        td = f.text_field :business
+          | 基準とする年月とその売上
+        td
+         = f.text_field :before_month, placeholder:"ex.2020年11月", class:"harf"
+         = f.text_field :before_sales, placeholder:"ex.1,200,000円", class:"harf"
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 基準とする年の年間売上
+        td = f.text_field :before_year_sales, placeholder:"ex.100,000,000円"
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 減少した年月とその売上
+        td
+         = f.text_field :after_month, placeholder:"ex.2020年11月", class:"harf"
+         = f.text_field :after_sales, placeholder:"ex.1,200,000円", class:"harf"
       tr
         td
           strong.label 必須
         td.arrow_box
-          | 月間アポ希望件数
-          br
-          | (最低20件〜)
-        td = f.number_field :number
-      tr
-        td
-          strong.label 必須
-        td.arrow_box
-          | 開始時期
-          br
-          |(2ヶ月以内開始希望のみ受付中)
-        td = f.select(:start, [ \
+          | 種別
+        td = f.select(:kinds, [ \
             ["選択する","選択する"],      \
             ["即開始希望","即開始希望"],      \
             ["1ヶ月以内","1ヶ月以内"],      \
@@ -82,33 +88,19 @@
             ])
       tr
         td
-          strong.label.label-blue 任意
-        td.arrow_box
-          | ターゲット先業種
-        td = f.text_field :target_industry
-      tr
-        td
-          strong.label.label-blue 任意
-        td.arrow_box
-          | ターゲット先人数規模
-        td = f.text_field :target_employment
-      tr
-        td
           strong.label 必須
         td.arrow_box
-          | 商材ファイル添付
-          br
-          |(最低１つ添付)
-        td
-           = f.file_field :document_1
-           = f.file_field :document_2
-           = f.file_field :document_3
+          | 書類収集にご協力頂けますか？
+        td = f.select(:request, [ \
+            ["はい","はい"],      \
+            ["いいえ","いいえ"],      \
+            ])
       tr
         td
-          strong.label.label-blue 任意
+          strong.label.label-blue.label-blue 任意
         td.arrow_box
-          | その他商材に関する情報
-        td = f.text_field :remarks
+          | 備考
+        td = f.text_area :remarks
       tr
         td colspan="3"
           = f.submit "確認"

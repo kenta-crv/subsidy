@@ -5,8 +5,8 @@ br
 = form_for(@estimate, url: { action: :thanks }) do |f|
   .tops-wrapper
     h2.heading
-      span> お見積もり内容確認
-      | フォーム
+      span> 助成金見積もり
+      | 内容確認
     table.company
       colgroup
         col width="10%" /
@@ -62,61 +62,57 @@ br
           = @estimate.url
       tr
         td
-          strong.label 必須
+          strong.label.label-blue 任意
         td.arrow_box
-          | アポ取りを行う商材
+          | 基準とする年月とその売上
         td
-          = f.hidden_field :business
-          = @estimate.business
-      tr
-        td
-          strong.label 必須
-        td.arrow_box
-          | 月間アポ希望件数
-        td
-          = f.hidden_field :number
-          = @estimate.number
-      tr
-        td
-          strong.label 必須
-        td.arrow_box
-          | 開始時期
-        td
-          = f.hidden_field :start
-          = @estimate.start
+         = f.hidden_field :before_month
+         = @estimate.before_month
+         |（
+         = f.hidden_field :before_sales
+         = @estimate.before_sales
+         |円）
       tr
         td
           strong.label.label-blue 任意
         td.arrow_box
-          | ターゲット先業種
+          | 基準とする年の年間売上
         td
-          = f.hidden_field :target_industry
-          = @estimate.target_industry
+         = f.hidden_field :before_year_sales
+         = @estimate.before_year_sales
       tr
         td
           strong.label.label-blue 任意
         td.arrow_box
-          | ターゲット先人数規模
+          | 減少した年月とその売上
         td
-          = f.hidden_field :target_employment
-          = @estimate.target_employment
+         = f.hidden_field :after_month
+         = @estimate.after_month
+         |（
+         = f.hidden_field :after_sales
+         = @estimate.after_sales
+         |円）
       tr
         td
           strong.label 必須
         td.arrow_box
-          | 商材ファイル添付
+          | 種別
         td
-          = f.hidden_field :document_1
-          = @estimate.document_1.to_s
-          = f.hidden_field :document_2
-          = @estimate.document_2.to_s
-          = f.hidden_field :document_3
-          = @estimate.document_3.to_s
+         = f.hidden_field :kinds
+         = @estimate.kinds
       tr
         td
-          strong.label.label-blue 任意
+          strong.label 必須
         td.arrow_box
-          | その他商材に関する情報
+          | 書類収集にご協力頂けますか？
+        td
+          = f.hidden_field :request
+          = @estimate.request
+      tr
+        td
+          strong.label.label-blue.label-blue 任意
+        td.arrow_box
+          | 備考
         td
           = f.hidden_field :remarks
           = @estimate.remarks

@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   get 'case' => 'top#case' #成功事例
   get 'question' => 'top#question' #ナレッジリスト
 
-  resources :posts
   resources :columns
 
   get '/estimates' => 'estimates#index'

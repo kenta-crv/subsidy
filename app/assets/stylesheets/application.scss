@@ -158,18 +158,17 @@ footer {
 }
 
                                   /*  メイン画像  */
-
+                                  /*  メイン画像  */
 .back-image-app {
-  background-image: url('base3.png');
+  background-image: url('subbase.webp');
   background-size: 100%;
   background-repeat: no-repeat;
   vertical-align: middle;
   padding-bottom:50px;
   margin-top:-22px;
-  margin-right:-15px;
 }
-
 .back-image {
+  text-align:center;
     .box2 {
      padding: 1vw 4.5vw 0.3vw;
      display:inline-block;
@@ -181,32 +180,35 @@ footer {
              }
       }
       .face-1 {
-          font-size:2.5vw;
+          font-size:4.0vw;
           font-weight:bold;
           margin-top:30px;
-          padding-bottom:20px;
+          color:#327BEE;
+          text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
       }
       .face-2 {
-          font-size:6.0vw;
+          font-size:3.6vw;
           font-weight:bold;
-          margin-bottom:-85px;
-          padding-bottom:15px;
       }
       .face-3 {
-          font-size:6.0vw;
+          font-size:7.0vw;
           font-weight:bold;
-          padding-bottom:15px;
-          color:red;
+          color:#327BEE;
+          text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
+      }
+      .face-4 {
+          font-size:2.0vw;
+          font-weight:bold;
+          text-shadow: 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff, 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff;
+          line-height:4.0vw;
       }
       .face-price {
-          font-size:5.5vw;
+          font-size:3.0vw;
           font-weight:bold;
-          color:red;
-
-           strong{
-             font-size:8.5vw;
-             color:red;
-           }
+          color:orange;
+          margin:-10px 0 -25px;
+          margin-top:20px;
+          margin-bottom:0px;
       }
       .face-conversion {
           font-size:3.0vw;
@@ -216,66 +218,6 @@ footer {
  }
 
 
- .back-image-it {
- background-image: url('baset.png');
- background-size: 100%;
- background-repeat: no-repeat;
- vertical-align: middle;
- padding-bottom:50px;
- margin-top:-22px;
- margin-right:-15px;
- }
- .back-image-lp {
-   text-align:center;
-     .box2 {
-      padding: 1vw 4.5vw 0.3vw;
-      display:inline-block;
-      background:red;
-            p {
-            color: #FFF;/*文字色*/
-            font-weight: bold;
-            font-size:2.0vw;
-              }
-       }
-       .face-1 {
-           font-size:3.5vw;
-           font-weight:bold;
-           margin-top:30px;
-           color:#327BEE;
-           text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
-       }
-       .face-2 {
-           font-size:3.6vw;
-           font-weight:bold;
-       }
-       .face-3 {
-           font-size:8.0vw;
-           font-weight:bold;
-           color: #004D7F;
-           text-shadow: 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff, 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff;
-       }
-       .face-4 {
-           font-size:2.0vw;
-           font-weight:bold;
-           text-shadow: 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff, 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff;
-           line-height:4.0vw;
-       }
-       .face-price {
-           font-size:5.0vw;
-           font-weight:bold;
-           color:orange;
-           margin:-10px 0 -25px;
-           padding-left:50px;
-           margin-top:20px;
-           text-shadow: 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff, 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff;
-           margin-bottom:0px;
-       }
-       .face-conversion {
-           font-size:3.0vw;
-           font-weight:bold;
-           color:red;
-       }
-  }
 
 
     .box1 {
@@ -309,6 +251,44 @@ footer {
 .under {
      background: linear-gradient(transparent 60%, #FFFF66 60%);
 }
+
+/*イエローライン*/
+.push2 {
+    text-align:center;
+    font-size:6.0vw;
+    color:orange;
+    line-height:5.0vw;
+    font-weight:bold;
+    width:100%;
+    text-shadow: 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff, 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff;
+}
+
+.balloon-right {
+  margin: 0 auto;
+  padding: 7px 10px;
+  width: 55%;
+  color: #555;
+  font-size: 1.5rem;
+  background: #fff;
+  border-radius: 15px;
+  border: medium solid blue;
+  padding:30px;
+  }
+
+
+  .balloon {
+    margin: 0 auto;
+    padding: 7px 10px;
+    max-width: 90%;
+    color: #555;
+    font-size: 1.5rem;
+    background: #fff;
+    border-radius: 15px;
+    border: medium solid blue;
+    padding:30px;
+
+    }
+
 
                                             /*テーブルに関する情報*/
 /*テーブル共通*/
@@ -872,12 +852,15 @@ dd {
 }
 .cp_qa .cp_actab {
 	position: relative;
-  padding-left:15%;
 	overflow: hidden;
 	width: 90%;
 	margin: 0 0 1em 0;
 	color: $main_color;
 }
+.cp_qa .left {
+	padding-left:15%;
+}
+
 .cp_qa .cp_actab input {
 	position: absolute;
 	opacity: 0;
@@ -902,6 +885,21 @@ dd {
 	padding-right: 0.5em;
 	content: 'Q';
 }
+
+.cp_qa1 .cp_actab label::before {
+	font-family: serif;
+	font-size: 1.5em;
+	margin-left: -2em;
+	padding-right: 0.5em;
+	content: '◎';
+}
+.cp_qa2 .cp_actab label::before {
+	font-family: serif;
+	font-size: 1.5em;
+	margin-left: -2em;
+	padding-right: 0.5em;
+	content: '×';
+}
 .cp_qa .cp_actab label:hover {
 	transition: all 0.3s;
 	color: #00838f;
@@ -914,7 +912,7 @@ dd {
 	position: absolute;
 	top: 0;
 	right: 0;
-	content: 'b';
+	content: '';
 	display: inline-block;
 	width: 2em;
 	height: 2em;

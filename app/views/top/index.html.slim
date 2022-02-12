@@ -1,34 +1,39 @@
-- set_meta_tags  title: 'テレアポ課金型で継続率No.1!!結果の出るテレアポ代行なら『アポスク』'
-- set_meta_tags  keyword: 'アポ代行,テレアポ 代行,テレアポ代行,アポ課金'
-- set_meta_tags  description: 'テレアポ課金型で継続率No.1の実績！課金型なのに高品質リストに架電するためアポ率が高く、非常にご好評頂いております。'
+/- set_meta_tags  title: 'テレアポ課金型で継続率No.1!!結果の出るテレアポ代行なら『助成金サポート.jp』'
+/- set_meta_tags  description: 'テレアポ課金型で継続率No.1の実績！課金型なのに高品質リストに架電するためアポ率が高く、非常にご好評頂いております。'
 
-/#トップ
 .back-image.back-image-app
-  br
   .row
-     .col-xs-1
-     .col-xs-7.face-1
-        | 業界最高峰リスト×アポインターのプロが架電
+    .col-xs-12
+        /.face-1
+        / | 申請料を大幅削減!!
         br
-        | 課金型で獲得率の高いテレアポ代行なら
         br
-          .face-2
-            |  『アポスク』
-            br
-              .face-price
-                   | 定額制でアポ量産！
-              .box2
-                p
-                  | 毎月3社様限定
-
-              .face-price
-               br.visible-xs
-
-br
+        .face-2
+         | 最大250万円受給の事業復活支援金申請なら
+        br
+        .face-3
+         | 助成金サポート.jp
+        .face-price
+          .box2
+            p
+             | 先着30社様限定で完全成果報酬で受託！
+        br
+        br
+        .face-4.hidden-xs
+          | 累計1000件以上の申請実績の助成金サポート.jp！
+          br
+          |本来発生する初期費用が今なら無料！
+          br
+          br
+          br
+          br
 .row
   .col-sm-12.center
-    =link_to "/contact", :target=>["_blank"]   do
-      sanz=image_tag 'ques.webp', width: '50%', class: 'center', alt: "成功報酬制の成功報酬制テレアポ代行に関するお問い合わせ電話番号、メールアドレス"
+    h2.push2
+     span
+       | \ 90秒！カンタン入力! /
+    =link_to "/estimates", :target=>["_blank"]   do
+      sanz=image_tag 'click.webp', width: '50%', class: 'center', alt: "成功報酬制の成功報酬制テレアポ代行に関するお問い合わせ電話番号、メールアドレス"
 
 br
 hr.line
@@ -37,45 +42,54 @@ br
   /# push font
   h2.push
      span
-       | アポスクで委託頂けた企業様の
+       | 助成金サポート.jpで申請頂いた
        br
-       | 実績の一部をご紹介します。
+       | 企業様のお声の一部をご紹介します。
 
+br
+hr.line
+br
 
-/# Comparison
-table.company.center
-  col[width="20%"]
-  col[width="30%"]
-  col[width="20%"]
-  col[width="30%"]
-  tbody
-    tr
-      th.arrow_box
-        | テレアポ代行実績
-      th.arrow_box
-        |
-      th.arrow_box.price
-        |
-      th.arrow_box.price
-        |
-    tr
-      th.arrow_box
-        | 人材紹介会社
-      td.price
-        | テレアポ率1~10%
-      th.arrow_box
-        | マーケティング・IT系
-      td.price
-        | テレアポ率1~12.5%
-    tr
-      th.arrow_box
-        | 国の制度活用事業
-      td.price
-        | 累計アポ数1000件超
-      th.arrow_box
-        | 広告代理店
-      td.price
-        | テレアポ率1.5~5%
+.row
+  .col-sm-4.center
+    =image_tag 'salaryman.png', width: '60%', class: 'center'
+    .review
+     | IT業界（30代社長）
+    .price
+     | 申請金額250万円
+  br
+  .col-sm-7.balloon
+    p
+     | 当社が申請条件に一致するかどうかをスムーズに判断して頂き、信頼し申請させていただきました。申請が始まったばかりにも関わらず、充実のサポートを行って頂き、国からの受理も確認することが出来ました。助成金の入金が楽しみです。
+  .col-sm-1
+
+.row
+  br
+  .col-sm-1
+  .col-sm-6.balloon-right
+    p
+     | コロナ禍以降、売上がなかなか改善せずに困っていたところ、助成金サポート.jpを見つけて無料見積りを依頼しました。普段から助成金には詳しくないので、最初は怪しさもありながらの問い合わせでしたが、丁寧に指導頂き助かりました。
+
+  .col-sm-4.center
+    =image_tag 'men.png', width: '60%', class: 'center'
+    .review
+     | 美容業界（50代社長）
+    .price
+     | 申請金額250万円
+  .col-sm-1
+br
+.row
+  .col-sm-4.center
+    =image_tag 'uncle.png', width: '60%', class: 'center'
+    .review
+     | 製造業界（60代社長）
+    .price
+     | 受給額185万円
+  br
+  .col-sm-7.balloon
+    p
+     | 事業復活支援金の申請を考えておりましたが、成果報酬で実施いただける会社がなかなか見つからず困っておりました。助成金サポート.jpさんは、完全成果報酬で承って頂けるとのことで即決しました。労務管理書類における資料についてもコンサルティング頂き、安心して取引することが出来ました。
+  .col-sm-1
 
 
 br
@@ -85,17 +99,17 @@ br
 /# push font
 h2.push
    span
-     | マーケティングが軸の会社だからこそ出来る！
+     | 既に他にも申し込み続々！
      br
-     | 押し売り営業せずの結果です！
+     | 限定30社は初期費用無料の完全成功報酬！
 
 br
 
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "/contact", :target=>["_blank"]   do
-      sanz=image_tag 'ques.webp', width: '50%', class: 'center', alt: "成功報酬制テレアポ代行に関するお問い合わせ電話番号、メールアドレス"
+    =link_to "/estimates", :target=>["_blank"]   do
+      sanz=image_tag 'click.webp', width: '50%', class: 'center', alt: "成功報酬制テレアポ代行に関するお問い合わせ電話番号、メールアドレス"
 
 br
 hr.line
@@ -104,41 +118,175 @@ br
 /# Trouble
 .top-wrapper
   h2.heading
+    | まずは確認
     strong
-      | こんなお悩み
-    | ありませんか？
+      | 事業復活支援金とは？
   br
   br
   h6.heading
-    | テレフォンアポイントを自社で行おうと検討していながら、なかなか導入できない企業様は多いのではないでしょうか？アポスクは、そんなお悩みの企業様に最適なプランをご用意しております。
+    | 事業復活支援金とは、新型コロナウイルス感染症により事業活動に影響を受け、売上が減少した中堅・中小・小規模事業者に向けて、その影響を緩和し、事業の復活を支援することを目的に支給される助成金です。尚、申請要件として以下２点を満たす必要があります。
+    .red
+     | ①新型コロナウイルス感染症の影響を受けている・②対象月の売上が30%以上減少している
+  br
+  br
   .row
-    .col-sm-1
-    br
-    br
-    .col-sm-4.center.visible-md
-      = image_tag "distress.jpg"
-    br
-    .col-sm-1
+    .col-sm-3
     .col-sm-6
-       p
-         strong
-           | ☑︎
-         |  成功報酬テレアポ代行は高くて手を出せない
-         br
-         b.h4
-         strong
-           | ☑︎
-         |  自社で雇用したいが指導する時間・スキームがない
-         br
-         b.h4
-         strong
-           | ☑︎
-         |  テレフォンアポインターを雇用してもすぐ辞めてしまう
-         br
-         b.h4
-         strong
-           | ☑︎
-         |  低価格で高い品質のアポイントを獲得したい
+      = image_tag "fukkatu.webp", width:"100%", alt: "テレアポ代行『助成金サポート.jp』の修正能力"
+    .col-sm-3
+br
+hr.line
+br
+
+/# push font
+h2.push
+   span
+     | 続いては申請対象となる事業主か
+     br
+     | 確認していきましょう！
+
+br
+
+/# inquiry image
+.row
+  .col-sm-12.center
+    =link_to "/estimates", :target=>["_blank"]   do
+      sanz=image_tag 'click.webp', width: '50%', class: 'center', alt: "成功報酬制テレアポ代行に関するお問い合わせ電話番号、メールアドレス"
+
+br
+hr.line
+br
+
+/# USP Point
+.top-wrapper
+  h2.heading
+    |事業復活支援金の
+    strong 申請対象外例
+  br
+  br
+  h6.heading
+    | 新型コロナウイルスの影響を受けていることが申請要件となります。ここでは申請が出来ない場合の一例を明記します。
+  br
+  br
+  .row
+    .col-sm-1
+    .col-sm-11.center
+     .cp_qa.cp_qa2
+       .cp_actab
+         input#cp_tabfour01[type="checkbox" name="tabs"]
+         label[for="cp_tabfour01"]
+           | 毎年起こりうる季節的な売上減少
+     .cp_qa.cp_qa2
+       .cp_actab
+         input#cp_tabfour03[type="checkbox" name="tabs"]
+         label[for="cp_tabfour03"]
+           | 売上計上基準の変更や顧客との取引時期の調整により売上が減少している
+     .cp_qa.cp_qa2
+       .cp_actab
+         input#cp_tabfour01[type="checkbox" name="tabs"]
+         label[for="cp_tabfour01"]
+           | コロナ禍とは無関係に単に営業日数が少なく、売上が減少している
+
+
+br
+hr.line
+br
+
+/# USP Point
+.top-wrapper
+  h2.heading
+    |  売上減少による
+    strong
+      |受給額を確認
+  br
+  br
+  h6.heading
+    | ここでは事業復活支援助成金で受給できる金額を確認して頂けます。売上減少要件や年間事業収入により異なりますので、企業それぞれの内容に沿ってご確認ください。
+  br
+  .row
+    .col-sm-1
+    .col-sm-11.center
+     .cp_qa.cp_qa1
+       .cp_actab
+         input#cp_tabfour05[type="checkbox" name="tabs"]
+         label[for="cp_tabfour05"]
+           | 【基準期間】2018年11月~2019年3月 / 2019年11月~2020年3月 / 2020年11月~2021年3月のいずれか1ヶ月
+  .row
+    .col-sm-1
+    .col-sm-11.center
+     .cp_qa.cp_qa1
+       .cp_actab
+         input#cp_tabfour07[type="checkbox" name="tabs"]
+         label[for="cp_tabfour07"]
+           | 【対象月】2021年11月〜2022年3月のいずれかで、基準期間で選択した月と同月
+  .row
+    .col-sm-1
+    .col-sm-11.center
+     .cp_qa.cp_qa1
+       .cp_actab
+         input#cp_tabfour06[type="checkbox" name="tabs"]
+         label[for="cp_tabfour06"]
+           | 【給付額】基準期間の合計法人事業収入ー対象月の法人事業収入×5
+  .row
+    .col-sm-1
+    .col-sm-11.center
+     .cp_qa.cp_qa1
+       .cp_actab
+         input#cp_tabfour08[type="checkbox" name="tabs"]
+         label[for="cp_tabfour08"]
+           | 【減少率】1 - 対象月の法人事業収入/基準月の法人事業収入
+  .row
+      .col-sm-1
+      .col-sm-11.center
+       .cp_qa.cp_qa1
+         .cp_actab
+           input#cp_tabfour08[type="checkbox" name="tabs"]
+           label[for="cp_tabfour08"]
+             | 年間売上1億円以下　2018年11月売上2,000,000円　2021年売上900,000円のい場合
+             br
+             | 給付額：2,000,000 - 900,000 = 1,100,000 × 5 = 5,500,000
+             br
+             | 減少率：1 - 900,000 / 2,000,000 = 55%
+             br
+             | 受給額：下記表に基づき、受給額100万円
+
+
+  table.company.center
+    col[width="30%"]
+    col[width="23%"]
+    col[width="23%"]
+    col[width="23%"]
+    tbody
+      tr
+        th.arrow_box.price 年間事業収入
+        th 年間1億円以下
+        th 年間1億超~5億円
+        th 年間5億円超
+
+      tr
+        th.arrow_box
+          | 売上減少率50%以上の場合
+        td
+          span.price
+             | 上限100万円
+        td
+          span.price
+             | 上限150万円
+        td
+          span.price
+             | 上限250万円
+      tr
+        th.arrow_box
+          | 売上減少率30%以上50%未満
+        td
+          span.price
+             | 上限60万円
+        td
+          span.price
+             | 上限90万円
+        td
+          span.price
+             | 上限150万円
 
 br
 hr.line
@@ -147,290 +295,143 @@ br
 /# push font
 h2.push
    span
-     | お任せ下さい！質の高いリストで
+     | 無料で申請対象か確認致します！
      br
-     | コストパフォーマンスが高くアポを提供！
+     | 下記からお問い合わせください
 
 br
 
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "/contact", :target=>["_blank"]   do
-      sanz=image_tag 'ques.webp', width: '50%', class: 'center', alt: "成功報酬制テレアポ代行に関するお問い合わせ電話番号、メールアドレス"
-
+    =link_to "/estimates", :target=>["_blank"]   do
+      sanz=image_tag 'click.webp', width: '50%', class: 'center', alt: "成功報酬制テレアポ代行に関するお問い合わせ電話番号、メールアドレス"
 
 br
 hr.line
 br
+
+
+
+/# USP Point
+.top-wrapper
+  h2.heading
+    |  助成金サポート.jpの
+    strong
+      |  代行費用のご案内
+  br
+  br
+  table.company.center
+    col[width="33%"]
+    col[width="33%"]
+    col[width="33%"]
+    tbody
+      tr
+        th.arrow_box.price
+        th 費用
+        th 詳細
+      tr
+        th.arrow_box
+          | 着手金
+        td
+          del
+           | 50,000円
+           br
+          span.price
+             |  0円
+        td
+             | 限定30社まで無料キャンペーン中
+      tr
+        th.arrow_box
+          | 成果報酬
+        td
+          span.price
+             | 一律30万円
+        td
+          | 申請完了後から起算して翌月末日
+      tr
+        th.arrow_box
+          | その他
+        td colspan="2"
+          | 証明書類取得を当社で代行する場合や、国の定める機関で事前確認による費用が発生する場合、別途費用が発生する可能性あり。
 
 /# push font
 h2.push
    span
-     | 定額料金で安心委託！『アポスク』の
+     | 続いては申請対象となる事業主か
      br
-     | 強みをご紹介！
+     | 確認していきましょう！
 
-br
-hr.line
-br
-
-/# USP Point
-.top-wrapper
-  h2.heading
-    |  圧倒的な実績を誇る
-    strong
-      |  マーケティング分析
-  br
-  br
-  h6.heading
-    | 独自マーケティング理論を唱えるアポスクは、分析や市場調査に非常に特化しています。このマーケティングとテレフォンアポイントを組み合わせることにより、非常に効果的なアポイント獲得を可能とします。
-  br
-  br
-  .row
-   .col-sm-3
-   .col-sm-6
-     = image_tag "usp1.jpg", width:"100%", alt: "テレアポ代行『アポスク』のマーケティング分析"
-   .col-sm-3
-
-br
-hr.line
-br
-
-/# USP Point
-.top-wrapper
-  h2.heading
-    |  どれだけアポが取れても
-    strong
-      |  定額料金のみ
-  br
-  br
-  h6.heading
-    | 成功報酬制はアポイントが多くなればなるほど支払う料金が高額になります。アポスクなら料金は定額となっているので、毎月どれだけアポが取れても余分な料金が発生しません。
-    br
-    small
-     | ※ハイレベルアポインターの架電を依頼頂く場合、別途費用が発生します。
-  br
-  br
-  .row
-   .col-sm-3
-   .col-sm-6
-     = image_tag "usp2.jpg", width:"100%", alt: "テレアポ代行『アポスク』のターゲティング選定"
-   .col-sm-3
-
-br
-hr.line
-br
-
-/# USP Point
-.top-wrapper
-  h2.heading
-    |  ITプログラマーが作り出す
-    strong
-      |  超厳選リスト
-  br
-  br
-  h6.heading
-    | 通常のテレアポ代行リストはリスト会社から購入するのが一般的。しかし弊社では、ITプログラマーが一つ一つのサイトからリストを抽出し、更に貴社の見込みになるであろうリストを徹底的に厳選した見込みリストを作り出します。これにより大幅なアポ率アップを叶えます。
-  br
-  br
-  .row
-   .col-sm-3
-   .col-sm-6
-     = image_tag "usp3.jpg", width:"100%", alt: "テレアポ代行『アポスク』の高品質リスト選定"
-   .col-sm-3
-
-br
-hr.line
-br
-
-/# USP Point
-.top-wrapper
-  h2.heading
-    |  押す営業スタイルを取り入れない
-    strong
-      |  心理学トーク
-  br
-  br
-  h6.heading
-    | アポスクにお問い合わせ頂くお客様の他社からの乗り換えで一番多いのがアポ品質の改善を求めて。弊社では押し営業で獲得せず、心理学を取り入れた『相手から会いたいと思わせるトーク』を活用するため、『話だけ』のアポは非常に少ない傾向にあります。
-  br
-  br
-  .row
-   .col-sm-3
-   .col-sm-6
-     = image_tag "usp5.jpg", width:"100%", alt: "テレアポ代行『アポスク』の心理学トーク"
-   .col-sm-3
-
-
-br
-hr.line
-br
-
-.top-wrapper
-  h2.heading
-    |  アポイントのプロに
-    strong
-      |  全権委託出来る！
-  br
-  br
-  h6.heading
-    | テレアポを通常スタートする場合、マーケティング分析・リスト制作・スクリプト構成・育成指導...その他にも多くの作業が発生します。アポスクなら全ての作業を一括で委託出来るため余分な手間が発生しません。
-  br
-  br
-  .row
-   .col-sm-3
-   .col-sm-6
-     = image_tag "usp6.jpg", width:"100%", alt: "テレアポ代行『アポスク』の修正能力"
-   .col-sm-3
-
-br
-hr.line
-br
-
-.top-wrapper
-  h2.heading
-    |  変更依頼も
-    strong
-      |  受付OK
-  br
-  br
-  h6.heading
-    | 成功報酬モデルの場合、アポ獲得率が変動するため、業務内容の変更を承って貰えない場合が多くありますが、アポスクは定額制のためどんな変更も柔軟に対応致します。
-  br
-  br
-  .row
-   .col-sm-3
-   .col-sm-6
-     = image_tag "usp7.jpg", width:"100%", alt: "成功報酬制テレアポ代行『アポスク』のメールマーケティングサポート"
-   .col-sm-3
-
-
-br
-hr.line
-br
-
-.top-wrapper
-  h2.heading
-    |  問題点を
-    strong
-      | フィードバック
-  br
-  br
-  h6.heading
-    |  ただ電話をかけるだけでは御社に成果を産むことができません。アポスクでは、架電に対するフィードバックや獲得に当たる難点を常に共有し、アポイント獲得率を上昇するためのPDCAを行います。
-  br
-  br
-  .row
-   .col-sm-3
-   .col-sm-6
-     = image_tag "usp8.jpg", width:"100%", alt: "テレアポ代行をお断りさせていただく場合がございます。"
-   .col-sm-3
-
-br
-hr.line
-br
-
-
-/# inquiry image
-.row
-  .col-sm-12.center
-    =link_to "/contact", :target=>["_blank"]   do
-      sanz=image_tag 'ques.webp', width: '50%', class: 'center', alt: "成功報酬制テレアポ代行に関するお問い合わせ電話番号、メールアドレス"
-
-br
-hr.line
-br
-
-/# price information
-.top-wrapper
-  h2.heading
-    strong
-      | 課金費用に全てコミコミの料金設定
-    | のご案内
-  br
-  br
-  h6.heading
-    | アポスクのテレアポ代行をお申し込み頂くにあたり当社に頂く費用をご案内しております。初期費用や月額費用は基本的に頂かない、分かりやすい料金体系となっております。
-
-table.company.center
-  col[width="20%"]
-  col[width="30%"]
-  tbody
-    tr
-      th.arrow_box.price colspan="4"
-        | 料金
-        small
-         |(※詳細の料金表はお問い合わせ下さい。)
-    tr
-      th.arrow_box
-        | 初期費用
-      td
-        span.price
-           |  0円
-      th.arrow_box
-        | 月額費用
-      td.price
-        span
-           |  0円
-    tr
-      th.arrow_box
-        | リスト制作費
-      td
-        span.price
-           |  0円
-      th.arrow_box
-        | スクリプト構成費
-      td.price
-        span
-           | 0円
-    tr
-      th.arrow_box
-        | アポ課金費用
-      td.price
-        span
-           | （例）350円/3call~
-      th.arrow_box
-        | 最低発注件数
-      td.price
-        span
-           | 500件〜
-small.red
-    | リスト費用等全て込みのパッケージプランとなっております。ご希望の内容によって料金が異なるので一度お問い合わせください。
-
-br
-br
-br
-/# inquiry image
-.row
-  .col-sm-12.center
-    =link_to "/contact", :target=>["_blank"]   do
-      =image_tag 'ques.webp', width: '50%', class: 'center', alt: "テレアポ代行『アポスク』のマーケティング分析"
-
-br
-hr.line
 br
 
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "/contact", :target=>["_blank"]   do
-      sanz=image_tag 'ques.webp', width: '50%', class: 'center', alt: "成功報酬制テレアポ代行に関するお問い合わせ電話番号、メールアドレス"
+    =link_to "/estimates", :target=>["_blank"]   do
+      sanz=image_tag 'click.webp', width: '50%', class: 'center', alt: "成功報酬制テレアポ代行に関するお問い合わせ電話番号、メールアドレス"
 
 br
 hr.line
 br
 
 
+
+br
+hr.line
+br
+
 .top-wrapper
   h2.heading
     strong
-      | アポスクのお申し込み
+      | 必要書類について
+  br
+  br
+  h6.heading
+    | 事業復活支援金の申請に必要な書類の一覧を記載しております。申請前に、下記書類を収集することが可能かどうかを必ず確認しましょう。（※ご用意可能な場合のみ、申請可能となります。）
+  br
+  br
+  .row
+    .col-sm-1
+    .col-sm-11.center
+     .cp_qa.cp_qa1
+       .cp_actab
+         input#cp_tabfour11[type="checkbox" name="tabs"]
+         label[for="cp_tabfour11"]
+           | 対象となる月の確定申告書類
+     .cp_qa.cp_qa1
+       .cp_actab
+         input#cp_tabfour12[type="checkbox" name="tabs"]
+         label[for="cp_tabfour12"]
+           | 対象となる月の売上台帳
+     .cp_qa.cp_qa1
+       .cp_actab
+         input#cp_tabfour14[type="checkbox" name="tabs"]
+         label[for="cp_tabfour14"]
+           | 対象となる月の通帳明細
+     .cp_qa.cp_qa1
+       .cp_actab
+         input#cp_tabfour13[type="checkbox" name="tabs"]
+         label[for="cp_tabfour13"]
+           | 履歴事項全部証明書（発行3ヶ月以内）
+     .cp_qa.cp_qa1
+       .cp_actab
+         input#cp_tabfour15[type="checkbox" name="tabs"]
+         label[for="cp_tabfour15"]
+           | 基準月の売上に係る証明書（請求書・領収書・納品書・契約書等）
+
+br
+hr.line
+br
+
+.top-wrapper
+  h2.heading
+    strong
+      | 助成金サポート.jpのお申し込み
     | の流れ
   br
   br
   h6.heading
-    | アポスクので定額レンタルサービスをご利用頂くまでの流れをご案内いたします。ご不明点が御座いましたら、以下お問い合わせフォームよりご連絡ください。
+    | 助成金サポート.jpのサービスをご利用頂くまでの流れをご案内いたします。ご不明点が御座いましたら、以下お問い合わせフォームよりご連絡ください。
 
 ul.flow.center
   li
@@ -438,33 +439,51 @@ ul.flow.center
       dt
         span.icon
           | STEP.01
-        | 架電条件を入力
+        | 申請確認
       dd.center
-        | お問い合わせフォームより架電依頼情報をご入力下さい。ご入力頂いた情報にて営業担当者からご連絡させて頂き、お見積書を発行致します。
+        | お問い合わせフォームよりご連絡下さいませ。
+        br
+        | 担当者よりご連絡し、申請方法についてのご案内を行います。
   li
     dl
       dt
         span.icon
           | STEP.02
-        | オンライン契約書で契約締結
+        | お申込み後書類収集
       dd.center
-        | お見積もり内容で問題が無ければ、オンラインにて契約を締結致します。
+        | お申込みを頂いた後、企業様には必要書類の送付を当社に行って頂きます。
+        br
+        | 追加書類等がない場合、残りは助成金サポート.jpが全て業務を行います。
   li
     dl
       dt
         span.icon
           | STEP.03
-        | 各種実施前準備を開始
+        | 事前確認機関へ申請
       dd.center
-        | トーク内容の構成やアポ取得のご案内迄の流れや手続きをご案内します。
+        | 事業復活支援金は2度の申請フローがあります。
+        br
+        | 1度目の申請を行い、仮審査を通過します。
   li
     dl
       dt
         span.icon
           | STEP.04
-        | 稼働開始
+        | 本申請完了
       dd.center
-        | 実際に稼働開始後も、連携を取りながらアポイント獲得について注力していきます。
+        | 事前確認機関への申請が完了しましたら、本申請へ移行します。
+        br
+        | 申請が通過しましたら、証明書をお送りします。
+  li
+    dl
+      dt
+        span.icon
+          | STEP.05
+        | 助成金受給
+      dd.center
+        | 順次、中小企業庁から入金が行われます。
+        br
+        | 助成金サポート.jpに成功報酬をお支払い頂き、完了となります。
 
 br
 hr.line
@@ -474,13 +493,13 @@ br
 /# push font
 h2.push
    span
-     | ご一読ありがとう御座います。アポスクは
+     | 現在30社限定で初期費用無料キャンペーン実施中！
      br
-     | 毎月3社様限定のお申込とさせて頂いております。
+     | 完全成功報酬のこの機関に是非お問い合わせください！
 
 br
 br
 .row
   .col-sm-12.center
-    =link_to "/contact", :target=>["_blank"]   do
-      sanz=image_tag 'ques.webp', width: '50%', class: 'center', alt: "成功報酬制テレアポ代行に関するお問い合わせ電話番号、メールアドレス"
+    =link_to "/estimates", :target=>["_blank"]   do
+      sanz=image_tag 'click.webp', width: '50%', class: 'center', alt: "成功報酬制テレアポ代行に関するお問い合わせ電話番号、メールアドレス"
